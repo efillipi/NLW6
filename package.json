@@ -9,7 +9,8 @@
     "typescript": "^4.3.4"
   },
   "scripts": {
-    "dev": "ts-node-dev src/server.ts"
+    "dev": "NODE_ENV=dev ts-node-dev src/server.ts",
+    "typeorm": "NODE_ENV=dev ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
